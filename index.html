@@ -1,11 +1,165 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <meta charset="UTF-8">
-  <title>Sajt u izradi</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal MAR Mont</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .top-bar {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav li {
+            cursor: pointer;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav li.active {
+            color: #ff7b00;
+        }
+
+        .hero {
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px #000;
+        }
+
+        .gallery {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            color: #e17700;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .gallery-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
-  <h1>Sajt u izradi</h1>
+    <!-- Gornji info bar -->
+    <div class="top-bar">
+        <span>Tel: XXX/XXX-XXXX</span>
+        <span>Email: xxxx@xxxx.xxx</span>
+        <span>Adresa</span>
+    </div>
+
+    <!-- Navigacija -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Metal MAR Mont logo">
+        </div>
+        <nav>
+            <ul>
+                <li class="active">NASLOVNA</li>
+                <li>O NAMA</li>
+                <li>GALERIJA</li>
+                <li>KONTAKT</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero sekcija sa slikom -->
+    <section class="hero">
+        <img src="zavarivanje.jpg" alt="Zavarivanje u akciji">
+        <div class="hero-text">PROJEKTOVANJE</div>
+    </section>
+
+    <!-- Sekcija sa galerijom -->
+    <section class="gallery">
+        <h2>PROVERITE ZAŠTO SMO NAJBOLJI</h2>
+        <div class="gallery-images">
+            <img src="slika1.jpg" alt="Ograda 1">
+            <img src="slika2.jpg" alt="Nadstrešnica 1">
+            <img src="slika3.jpg" alt="Konstrukcija 1">
+            <img src="slika4.jpg" alt="Nadstrešnica 2">
+            <img src="slika5.jpg" alt="Rešetka 1">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <span>Tel: XXX/XXX-XXXX</span>
+        <span>Metal MAR Mont</span>
+        <span>2025.</span>
+    </footer>
 </body>
 </html>
